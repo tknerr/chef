@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
   s.homepage = "http://www.getchef.com"
 
   s.required_ruby_version = ">= 2.0.0"
+  
+  s.add_dependency "ffi", "~> 1.9", "< 1.9.9"
 
   s.add_dependency "mixlib-config", "~> 2.0"
   s.add_dependency "mixlib-cli", "~> 1.4"
