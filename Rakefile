@@ -54,13 +54,13 @@ end
 
 task :build_eventlog do
   Dir.chdir 'ext/win32-eventlog/' do
-    system 'rake build'
+    system 'bundle exec rake build'
   end
 end
 
 task :register_eventlog do
   Dir.chdir 'ext/win32-eventlog/' do
-    system 'rake register'
+    system 'bundle exec rake register'
   end
 end
 
