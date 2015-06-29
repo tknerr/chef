@@ -23,7 +23,6 @@ require 'rubygems'
 require 'rubygems/package_task'
 require 'rdoc/task'
 require './tasks/rspec.rb'
-require 'bundler/setup'
 
 GEM_NAME = "chef"
 
@@ -55,13 +54,13 @@ end
 
 task :build_eventlog do
   Dir.chdir 'ext/win32-eventlog/' do
-    sh 'rake build'
+    system 'bundle exec rake build'
   end
 end
 
 task :register_eventlog do
   Dir.chdir 'ext/win32-eventlog/' do
-    sh 'rake register'
+    system 'bundle exec rake register'
   end
 end
 
