@@ -6,7 +6,7 @@ gemspec.platform = "x86-mingw32"
 
 gemspec.add_development_dependency "ffi", "~> 1.9", "< 1.9.9"
 
-gemspec.add_runtime_dependency "ffi", "~> 1.9", "< 1.9.9"
+#gemspec.add_runtime_dependency "ffi", "~> 1.9", "< 1.9.9"
 gemspec.add_dependency "windows-api", "~> 0.4.2"
 gemspec.add_dependency "windows-pr", "~> 1.2.2"
 gemspec.add_dependency "win32-api", "~> 1.5.1"
